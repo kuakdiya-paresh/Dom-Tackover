@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subdomain Takeover - PoC</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-top: 5px solid #e74c3c;
+        }
+        h1 {
+            color: #e74c3c;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .info {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #3498db;
+            display: inline-block;
+            text-align: left;
+        }
+        code {
+            background: #eee;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>⚠️ Subdomain Takeover!</h1>
+    <p>This domain was vulnerable to a <strong>GitHub Subdomain Takeover</strong>.</p>
+    
+    <div class="info">
+        <strong>Reason:</strong> Dangling CNAME record pointing to a deleted GitHub page.<br>
+        <strong>Reported by:</strong> Security Researcher<br>
+        <strong>Status:</strong> Proof of Concept (PoC) only.
+    </div>
+
+    <p class="footer">No sensitive data was accessed. Please update your DNS records to fix this.</p>
+</div>
+
+</body>
+</html>
